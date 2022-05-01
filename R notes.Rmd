@@ -1,0 +1,28 @@
+---
+title: "R notes"
+---
+## 1. Vectors
+```{r}
+x=c(1,2,3)
+x
+```
+We can mix data types in vector. When we do it, coercion happens and differents types of data become the same one.
+```{r}
+y=c(1,"a") #character
+y=c(TRUE, 2) #numeric
+y=c("a",TRUE) #character
+```
+How to coerce one class to another using functions:
+```{r}
+x=0:6
+class(x)
+as.numeric(x)
+as.logical(x)
+as.character(x)
+```
+Coercion will no always work, we can't convert characters to numeric or logical...
+##List
+```{r}
+x=list(1,2,3)
+```
+
